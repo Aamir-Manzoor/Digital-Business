@@ -1,15 +1,19 @@
-
-
-import './App.css'
+import "./App.css";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Dashboard from "./pages/dashboard/Dashboard";
+import Layout from "./layouts/Layout";
 
 function App() {
-
-
-  return (
-    <>
-      hi
-    </>
-  )
+  return(
+    <div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<Layout/>}></Route>
+    <Route path="/dashboard" element={Dashboard}></Route>
+    </Routes>
+    </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
