@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { FaTasks } from "react-icons/fa";
-import { AiFillCalender, AiOutlineTable } from "react-icons/ai";
+import { AiFillCalendar, AiOutlineTable } from "react-icons/ai";
 import { MdSpaceDashboard } from "react-icons/md";
-import data from "../data/data";
+// import data from "../data/data";
 import css from "./Sidebar.module.css";
 
 const Sidebar = () => {
@@ -15,7 +15,7 @@ const Sidebar = () => {
         </NavLink>
 
         <NavLink to="calender" className={css.item} title={"Calender"}>
-          <AiFillCalender size={30} />
+          <AiFillCalendar size={30} />
         </NavLink>
 
         <NavLink to="board" className={css.item} title={"Trello Board"}>
