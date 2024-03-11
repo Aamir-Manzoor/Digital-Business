@@ -25,3 +25,10 @@
 .topBaseGradient > :nth-child(3){
     right: 0;
 } 
+
+.header{
+    display: flex;
+    padding: 2rem 4rem;
+    align-items: center;
+    justify-content: space-between;
+}

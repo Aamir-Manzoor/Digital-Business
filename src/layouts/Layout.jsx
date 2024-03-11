@@ -1,6 +1,6 @@
-import moment from 'moment/moment';
+import moment from "moment/moment";
 
-import {BiSearch} from 'react-icons/bi'
+import { BiSearch } from "react-icons/bi";
 import css from "./Layout.module.css";
 const Layout = () => {
   return (
@@ -17,8 +17,16 @@ const Layout = () => {
           <span>{moment().format("dddd, do MMM YYYY")}</span>
 
           <div className={css.searchBar}>
-            <BiSearch size={20}/>
-            <input type="text" placeholder='Enter here' />
+            <BiSearch size={20} />
+            <input type="text" placeholder="Enter here" />
+          </div>
+
+          <div className={css.profile}>
+            <img src="./profile" alt="Image" />
+            <div className={css.details}>
+              <span>Amir Manzoor</span>
+              <span>dummyaamir89@gmail.com</span>
+            </div>
           </div>
         </div>
       </div>
