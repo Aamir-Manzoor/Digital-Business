@@ -1,6 +1,7 @@
 import moment from "moment/moment";
 
 import { BiSearch } from "react-icons/bi";
+import ProfileImg from "../assets/profiel.jpg";
 import css from "./Layout.module.css";
 const Layout = () => {
   return (
@@ -22,7 +23,7 @@ const Layout = () => {
           </div>
 
           <div className={css.profile}>
-            <img src="./profile" alt="Image" />
+            <img src={ProfileImg} alt="Image" />
             <div className={css.details}>
               <span>Amir Manzoor</span>
               <span>dummyaamir89@gmail.com</span>
