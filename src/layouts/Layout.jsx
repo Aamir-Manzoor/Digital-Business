@@ -1,3 +1,6 @@
+import moment from 'moment/moment';
+
+
 import css from "./Layout.module.css";
 const Layout = () => {
   return (
@@ -8,6 +11,10 @@ const Layout = () => {
           <div className="gradient-red"></div>
           <div className="gradient-orange"></div>
           <div className="gradient-blue"></div>
+        </div>
+
+        <div className={css.header}>
+          <span>{moment().format("dddd, do MMM YYYY")}</span>
         </div>
       </div>
     </div>
