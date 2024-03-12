@@ -1,11 +1,11 @@
 import css from "./Dashboard.module.css";
 import {
   cardsData,
-  ordersData,
-  groupNumber,
-  INITIAL_EVENTS,
-  userData,
-  boardData,
+  // ordersData,
+  // groupNumber,
+  // INITIAL_EVENTS,
+  // userData,
+  // boardData,
 } from "../../data/data";
 const Dashboard = () => {
   return (
@@ -32,7 +32,7 @@ const Dashboard = () => {
                 </div>
 
                 <div className={css.cardAmount}></div>
-              </div>
+              </div>;
             })}
           </div>
         </div>
