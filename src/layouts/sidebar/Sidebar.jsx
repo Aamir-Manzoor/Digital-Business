@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import { FaTasks } from "react-icons/fa";
 import { AiFillCalendar, AiOutlineTable } from "react-icons/ai";
 import { MdSpaceDashboard } from "react-icons/md";
-// import data from "../data/data";
 import css from "./Sidebar.module.css";
 
 const Sidebar = () => {
