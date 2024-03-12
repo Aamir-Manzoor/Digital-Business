@@ -5,14 +5,12 @@ import Layout from "./components/layouts/Layout";
 
 function App() {
   return (
-    <div id='dashboard'>
+    <div id="dashboard">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-          <Route path="Dashboard" element={<Dashboard />}></Route>
-
+            <Route path="Dashboard" element={<Dashboard />}></Route>
           </Route>
-         
         </Routes>
       </BrowserRouter>
     </div>
