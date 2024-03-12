@@ -4,7 +4,6 @@ import css from "./Layout.module.css";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
 import Sidebar from "./sidebar/Sidebar";
 
-
 const Layout = () => {
   const { pathname } = useLocation();
   return (
