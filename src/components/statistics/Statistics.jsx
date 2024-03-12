@@ -4,7 +4,7 @@ import css from "./Statistics.module.css";
 
 const Statistics = () => {
   return (
-    <div className={css.container}>
+    <div className={`${css.container} theme-container`}>
       <span className={css.title}>Overview Statistics</span>
 
       <div className={`${css.cards} grey-container`}>
