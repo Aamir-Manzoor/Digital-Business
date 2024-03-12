@@ -14,7 +14,7 @@ const Dashboard = () => {
   return (
     <div className={css.container}>
       <div className={css.dashboard}>
-        <div className={`${css.dashboardHead} theme-container`}>
+        <div className={`${css.dashboardHead} `}>
           <div className={css.head}>
             <span>Dashboard</span>
 
@@ -26,7 +26,7 @@ const Dashboard = () => {
               </select>
             </div>
           </div>
-          <div className={css.card}>
+          <div className={css.cards}>
             {cardsData.map((card, i) => (
               <div className={css.card} key={i}>
                 <div className={css.cardHead}>
