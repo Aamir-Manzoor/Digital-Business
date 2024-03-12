@@ -1,14 +1,21 @@
 import css from "./Dashboard.module.css";
+import {
+  cardsData,
+  ordersData,
+  groupNumber,
+  INITIAL_EVENTS,
+  userData,
+  boardData,
+} from "../../data/data";
 const Dashboard = () => {
   return (
     <div className={css.container}>
       <div className={css.dashboard}>
-        <div className={css.dashboardHead}>
+        <div className={`${css.dashboardHead} theme-container`}>
           <div className={css.head}>
             <span>Dashboard</span>
 
             <div className={css.durationButton}>
-
               <select>
                 <option value="">1 Week</option>
                 <option value="">1 Month</option>
@@ -16,10 +23,9 @@ const Dashboard = () => {
               </select>
             </div>
           </div>
+          <div className={css.card}></div>
         </div>
       </div>
-
-
 
       <div className={css.orders}>orders</div>
     </div>
