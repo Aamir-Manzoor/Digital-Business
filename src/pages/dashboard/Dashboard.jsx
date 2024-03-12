@@ -23,7 +23,18 @@ const Dashboard = () => {
               </select>
             </div>
           </div>
-          <div className={css.card}></div>
+          <div className={css.card}>
+            {cardsData.map((card, i) => {
+              <div className={css.card} key={i}>
+                <div className={css.cardHead}>
+                  <span>{card.title}</span>
+                  <span>{card.change}</span>
+                </div>
+
+                <div className={css.cardAmount}></div>
+              </div>
+            })}
+          </div>
         </div>
       </div>
 
