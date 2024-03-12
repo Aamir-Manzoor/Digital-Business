@@ -1,4 +1,5 @@
 import moment from "moment/moment";
+import profile from "../../assets/profiel.jpg";
 import { BiSearch } from "react-icons/bi";
 import css from "./Layout.module.css";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
@@ -27,7 +28,7 @@ const Layout = () => {
             <input type="text" placeholder="Enter here" />
           </div>
           <div className={css.profile}>
-            <img src="./profile.jpg" alt="" />
+            <img src={profile} alt="" />
 
             <div className={css.details}>
               <span>Arfain Saba</span>

@@ -5,7 +5,7 @@ import Layout from "./components/layouts/Layout";
 
 function App() {
   return (
-    <div>
+    <div id='dashboard'>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>

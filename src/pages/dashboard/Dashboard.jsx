@@ -2,11 +2,12 @@ import css from "./Dashboard.module.css";
 import {
   cardsData,
   // ordersData,
-  // groupNumber,
+  groupNumber,
   // INITIAL_EVENTS,
   // userData,
   // boardData,
 } from "../../data/data";
+import Statistics from "../../components/statistics/Statistics";
 const Dashboard = () => {
   return (
     <div className={css.container}>
@@ -24,18 +25,22 @@ const Dashboard = () => {
             </div>
           </div>
           <div className={css.card}>
-            {cardsData.map((card, i) => {
+            {cardsData.map((card, i) => (
               <div className={css.card} key={i}>
                 <div className={css.cardHead}>
                   <span>{card.title}</span>
                   <span>{card.change}</span>
                 </div>
 
-                <div className={css.cardAmount}></div>
-              </div>;
-            })}
+                <div className={css.cardAmount}>
+                  <span>$</span>
+                  <span>{groupNumber(card.amount)}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+        <Statistics/>
       </div>
 
       <div className={css.orders}>orders</div>
