@@ -38,3 +38,14 @@ font-weight: 500;
     font-size: 1.1rem;
     font-weight: 500;
 }
+
+.arrowIcon{
+width: 2rem;
+height: 2rem;
+background: var(--orange);
+}
+
+.arrowIcon > svg{
+    height: 2rem;
+    width: 2rem;
+}
